@@ -166,6 +166,47 @@ nav ul li a {
     margin-left: 35px;
 }
 
+/* join section */
+.join {
+    background-image: url("../assets/news-letter-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    padding: 199px 305px 193px 305px;
+}
+
+.join h3 {
+    font-size: 3.125rem;
+    margin-bottom: 23px;
+}
+
+.join form {
+    width: 830px;
+    height: 50px;
+    display: flex;
+}
+
+.join form input {
+    flex: 3;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.join form input::placeholder {
+    color: var(--text-light-dark);
+}
+
+.join form button {
+    flex: 1;
+}
+
 
 @media screen and (max-width: 393px) {
     /* shared styles */
@@ -245,5 +286,17 @@ nav ul li a {
     }
     .trusted-img {
         display: none;
+    }
+
+    /* join section */
+    .join {
+        padding: 110px 36px 64px 36px;
+    }
+    .join h3 {
+        font-size: 1.25rem;
+    }
+    .join form {
+        width: 321px;
+        height: 50px
     }
 }
