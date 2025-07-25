@@ -51,10 +51,10 @@ nav ul {
     gap: 3rem;
 }
 
-nav ul li {
+li{
     list-style: none;
 }
-nav ul li a {
+a {
     text-decoration: none;
     color: var(--text-light-dark);
 }
@@ -160,6 +160,7 @@ nav ul li a {
     right: -17%;
 }
 .plant-lover div ul li {
+    list-style: disc;
     font-size: 1.375rem;
     color: var(--text-light-dark);
     margin-top: 20px;
@@ -205,6 +206,25 @@ nav ul li a {
 
 .join form button {
     flex: 1;
+}
+
+/* footer section */
+.footer {
+    margin: auto;
+    padding: 50px 160px;
+    justify-content: space-between;
+}
+
+.linksA,
+.linksB {
+    flex-direction: column;
+    gap: 32px;
+}
+.icons img {
+    margin-right: 24px;
+}
+.twitter {
+    transform: translate(0, -40%);
 }
 
 
@@ -298,5 +318,15 @@ nav ul li a {
     .join form {
         width: 321px;
         height: 50px
+    }
+
+    /* footer section */
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 16px;
+    }
+    .footer-content {
+        font-size: 1rem;
     }
 }
