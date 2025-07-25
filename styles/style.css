@@ -33,6 +33,9 @@ main {
     max-width: 1140px;
     margin: auto;
 }
+.center {
+    text-align: center;
+}
 .flex {
     display: flex;
 }
@@ -74,15 +77,77 @@ nav ul li a {
 .title-attract {
     color: var(--orange-color);
 }
-.banner-subtitle {
+.subtitle {
     font-size: 1.375rem;
     color: var(--text-light-dark);
     margin-top: 13px;
     max-width: 530px;
 }
 
+/* plant section */
+.plant-section {
+    margin-bottom: 210px;
+}
+.our-plant {
+    margin-top: 120px;
+}
+.our-plant h4 {
+    font-size: 3.125rem;
+}
+.our-plant p {
+    font-size: 1.375rem;
+    color: var(--text-light-dark);
+    margin: auto;
+    margin-top: 16px;
+    max-width: 888px;
+}
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+.item {
+    max-width: 270px;
+}
+.item img {
+    width: 100%;
+}
+.item h4, .item h5 {
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.375rem;
+}
+.item h4 {
+    font-weight: 400;
+    margin-top: 30px;
+}
+.item h5 {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: 700;
+}
+.btn-primary:hover {
+    background-color: #cc5007;
+}
+
 
 @media screen and (max-width: 393px) {
+    /* shared styles */
+    .banner-content,
+    .our-plant,
+    .container {
+        margin: 0 16px 0 16px;
+    }
+
     /* nav style */
     .hide {
         display: none;
@@ -102,14 +167,36 @@ nav ul li a {
     .banner img {
         width: 100%;
     }
-    .banner-content {
-        margin: 0 16px 0 16px;
-    }
     .banner-title {
         font-size: 1.5rem;
         margin-top: 28px;
     }
-    .banner-subtitle {
+    .subtitle,
+    .our-plant p {
         font-size: 0.875rem;
+    }
+
+    /* plant section */
+    .plant-section {
+        margin-bottom: 40px;
+    }
+    .our-plant {
+        margin-top: 65px;
+    }
+    .our-plant h4 {
+        font-size: 1.5rem;
+    }
+    .our-plant p {
+        max-width: 336px;
+    }
+    .container {
+        margin-top: 28px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+        max-width: 170px;
+    }
+    .item h4, .item h5{
+        font-size: 1rem;
     }
 }
